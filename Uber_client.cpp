@@ -62,6 +62,7 @@ int main(int argc, char **argv) {
   tpa_end.trip_id = trip_id;
   tpa_end.point.latitude = latitude;
   tpa_end.point.longitude = longitude;
+  // Consider the trip duration as the $fare.
   tpa_end.dollar_amount = trip_duration;
   client.EndTrip(tpa_end);
 
