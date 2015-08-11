@@ -6,6 +6,7 @@
 #include <map>
 #include <mutex>
 #include <set>
+#include <vector>
 #include <thrift/concurrency/ThreadManager.h>
 #include <thrift/concurrency/PosixThreadFactory.h>
 #include <thrift/protocol/TBinaryProtocol.h>
@@ -15,17 +16,15 @@
 #include <thrift/transport/TServerSocket.h>
 #include <thrift/transport/TBufferTransports.h>
 #include <thrift/transport/TTransportUtils.h>
-#include <vector>
 
 using namespace ::apache::thrift;
 using namespace ::apache::thrift::concurrency;
 using namespace ::apache::thrift::protocol;
-using namespace ::apache::thrift::transport;
 using namespace ::apache::thrift::server;
+using namespace ::apache::thrift::transport;
 
 using namespace ::std;
-using namespace  ::Uber;
-using ::boost::shared_ptr;
+using namespace ::Uber;
 
 // Defines all the methods of the Uber service.
 // All public methods of this class are thread safe.
