@@ -11,3 +11,6 @@ To start the server, type `./Uber_server <thread_pool_worker_count>`. This start
 To start the client, type `./Uber_client <trip_id> <trip_duration>`. This generates data for a given trip id and duration. See `Uber_client.cpp` for details.
 
 To load test the server, type `sh load_test.sh <num_clients>` to start a large number of clients. The current implementation scales to more than 1000 parallel clients on a `t2.medium` Amazon EC2 VM instance which has 2 vCPUs.
+
+## Hosted version
+The code is currently being hosted on a running t2.medium EC2 VM. To log in to the VM, type `ssh -i "verma7.pem" ec2-user@52.2.121.186`. Please email `vermaabhishekp@gmail.com` to request the `verma7.pem` private key for the VM.
