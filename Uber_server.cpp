@@ -225,7 +225,7 @@ class UberHandler : virtual public UberIf {
             pt.longitude <= gr.bottom_right.longitude);
   }
 
-  // Following ar e the class members and the mutexes that guard concurrent
+  // Following are the class members and the mutexes that guard concurrent
   // accesses to them.
 
   // Number of current trips.
