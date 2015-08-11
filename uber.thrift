@@ -54,7 +54,7 @@ service Uber {
   // Marks the end of a trip.
   void EndTrip(1:TripPointAmount trip_point_amount)
 
-  // Returns the number of trips that pass through the given geo rectangle.
+  // Returns the number of trips that pass through the given geo-rectangle.
   i32 NumTripsPassed(1:GeoRect rectangle)
 
   // Returns the number of trips and the sum of their fares for all trips whose
