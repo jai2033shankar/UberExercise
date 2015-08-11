@@ -12,7 +12,7 @@ using namespace apache::thrift::transport;
 using namespace std;
 using namespace Uber;
 
-// This file constructs an Uber test client and tests the basic functionalty
+// This file constructs an Uber test client and tests the basic functionality
 // of the Uber service.
 int main(int argc, char **argv) {
   boost::shared_ptr<TSocket> socket(new TSocket("localhost", 9090));
