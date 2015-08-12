@@ -24,6 +24,9 @@ using namespace ::std;
 using namespace ::Uber;
 
 // Defines all the methods of the Uber service.
+// Keeps all the trip data in memory.
+// TODO(verma7): Persist trip data to disk.
+
 // All public methods of this class are thread safe.
 class UberHandler : virtual public UberIf {
  public:
